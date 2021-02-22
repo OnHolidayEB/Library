@@ -1,0 +1,166 @@
+header{
+    font-family: futura;
+    color: white;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #373b40;
+}
+
+h1{
+    margin: 10px 0px 0px 0px;
+}
+
+h4, h5, h6{
+    margin: 15px 0px 10px 20px;
+}
+
+h3{
+  font-size: 24px;
+  margin: 0px 0px 10px 10px
+}
+
+button{
+    font-family: futura;
+    background-color: #00468b;
+    width: 15vw;
+    border-color: darkgray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    margin-top: 15px;
+}
+
+#addWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    margin-top: -15vh;
+    margin-left: -15vh;
+    width: 30vh;
+    height: 30vh; 
+}
+
+.form{
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    border-color: black;
+    border-radius: 3%;
+    border-style: solid;
+    padding: 5vh;
+    background-color: #285b7d;
+    color:white;
+}
+
+.buttonWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.library{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bookCard{
+    position: relative;
+    background-color: #00468b;
+    background-image:linear-gradient(to bottom right, #03294e, #285b7d);
+    border-radius: 3%;
+    width: 20vw;
+    min-width:200px;
+    color:#e7e6ff;
+}
+
+#closeWrapper{
+    height: 5px;
+}
+
+#closeBtn{
+    background-color: rgba(0,0,0,0);
+    color: lightgray;
+    opacity: 50%;
+    outline: none;
+    border-style: none;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+#textWrapper{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    color:#e7e6ff;
+    padding: 15px 15px 45px 15px;
+    margin: 0px 0px 0px 5px;
+}
+
+#readWrapper{
+  display: flex;
+  align-items: center;
+  position:absolute;
+  bottom: 8px;
+  right: 15px
+}
+
+label{
+    font-family: futura;
+    font-size: 14px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 40px;
+    height: 5px;
+    background-color: lightblue;
+    outline: none;
+}
+
+.sliderNotRead::-webkit-slider-thumb{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #dc1c0c;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.sliderRead::-webkit-slider-thumb{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #2aa519;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+
+
+
+
+ 
